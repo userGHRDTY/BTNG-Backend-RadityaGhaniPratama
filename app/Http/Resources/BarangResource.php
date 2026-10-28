@@ -18,7 +18,9 @@ class BarangResource extends JsonResource
             'stok'     => $this->stok,
             'satuan'   => $this->satuan,
             'status'   => $this->status,
-            'foto'     => $this->foto,
+            'foto' => $this->foto
+    ? (str_starts_with($this->foto, 'http') ? $this->foto : asset($this->foto))
+    : null,
         ];
     }
 }

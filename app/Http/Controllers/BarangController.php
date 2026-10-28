@@ -46,7 +46,7 @@ class BarangController extends Controller
             'stok'     => 'required|integer|min:0',
             'satuan'   => 'required|in:pcs,kg,liter,karung,dus',
             'status'   => 'required|in:tersedia,habis',
-            'foto'     => 'nullable|url',
+            'foto'     => 'nullable|string|max:255',
         ], [
             'kode.required'  => 'Kolom kode barang wajib diisi.',
             'kode.unique'    => 'Kode barang sudah dipakai.',
@@ -98,7 +98,7 @@ class BarangController extends Controller
             'stok'     => 'sometimes|required|integer|min:0',
             'satuan'   => 'sometimes|required|in:pcs,kg,liter,karung,dus',
             'status'   => 'sometimes|required|in:tersedia,habis',
-            'foto'     => 'nullable|url',
+            'foto'     => 'nullable|string|max:255',
         ]);
 
         $barang->update($validated);
