@@ -7,8 +7,8 @@ REST API manajemen barang koperasi desa untuk Tugas Akhir BTNG Kelas Website Bac
 Laravel 12, PHP 8.2, MySQL, Scramble
 ## Setup Lokal
 ```bash
-git clone https://github.com/userGHRDTY/KASIR-KOPDES.git
-cd KOPDES-RDTYGHNPRTM
+git clone https://github.com/userGHRDTY/BTNG-Backend-RadityaGhaniPratama.git
+cd BTNG-Backend-RadityaGhaniPratama
 composer install
 cp .env.example .env
 php artisan key:generate
