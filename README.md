@@ -22,7 +22,7 @@ php artisan serve
 ## Daftar Endpoint
 | Method | Endpoint | Deskripsi |
 |---|---|---|
-| GET | /api/barang | Daftar barang (filter `?kategori=`, `?status=`, `?search=`) |
+| GET | /api/barang | Daftar barang (filter `kategori=?`, `status=?`, `search=?`) |
 | GET | /api/barang/{id} | Detail barang |
 | POST | /api/barang | Tambah barang |
 | PUT/PATCH | /api/barang/{id} | Perbarui barang |
